@@ -1,0 +1,26 @@
+body {
+  background-color: #f5f6f8;
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+main.container {
+  max-width: 720px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e7f1ff;
+  font-weight: 600;
+}
+
+.output-area {
+  background-color: #f8f9fa;
+  font-family: monospace;
+  resize: none;
+}
+
+footer {
+  font-size: 0.85rem;
+}

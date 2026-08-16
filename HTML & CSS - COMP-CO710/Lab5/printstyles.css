@@ -1,0 +1,80 @@
+/* CO710 Statement of Authorship
+I Churchill Daniel, 000983683 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else. */
+@media print {
+  * {
+    color: black !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  nav,
+  footer {
+    display: none !important;
+  }
+
+  .site-header {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  body {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+  }
+
+  fieldset {
+    background: transparent !important;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  textarea {
+    background-color: transparent !important;
+    border: 1px solid black !important;
+    color: black !important;
+  }
+
+  button,
+  .btn-row {
+    display: none !important;
+  }
+
+  table.schedule th,
+  table.schedule td {
+    background-color: transparent !important;
+    color: black !important;
+  }
+
+  .swatch {
+    background-color: transparent !important;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+
+  fieldset,
+  table {
+    page-break-inside: avoid;
+  }
+
+  table.schedule,
+  table.schedule th,
+  table.schedule td,
+  table.legend,
+  table.legend th,
+  table.legend td,
+  .region {
+    border: none !important;
+  }
+}

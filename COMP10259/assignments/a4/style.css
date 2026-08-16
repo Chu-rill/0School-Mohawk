@@ -1,0 +1,32 @@
+#win-card {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  width: 300px;
+  padding: 20px;
+  gap: 12px;
+  display: none; /* hidden at the start */
+  flex-direction: column; /* stack the title and button */
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: fixed; /* fixed so it centers on the page */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+#win-card.show {
+  display: flex;
+  animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  }
+}

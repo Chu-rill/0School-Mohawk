@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Dining Room - Sandy and Leslie's Apartment</title>
+    <link rel="stylesheet" href="apartment_layout.css" >
+    <link rel="stylesheet" href="mobile.css" >
+    <!--  		CO710 Statement of Authorship
+        I Churchill Daniel, 000983683 certify that this material is
+        my original work. No other person's work has been used
+        without due acknowledgment. I have not made my work
+        available to anyone else.
+
+        Date: April 9, 2026 -->
+  </head>
+  <body>
+    <header>
+      <h1>Sandy and Leslie's Apartment</h1>
+    </header>
+
+    <main>
+      <div class="floor-plan">
+        <img
+          src="media/apartmentfloorplan.jpg"
+          alt="Sandy and Leslie's Apartment Floor Plan"
+          usemap="#floormap"
+          title="floormap"
+        >
+        <map name="floormap">
+          <area
+            shape="rect"
+            coords="49,105,185,266"
+            href="bedroom.html"
+            alt="Bedroom 1"
+            title="bedroom"
+          >
+
+          <area
+            shape="poly"
+            coords="394,112,553,111,572,306,502,305,491,239,401,237"
+            href="bedroom.html"
+            alt="Bedroom 2"
+            title="bedroom"
+          >
+
+          <area
+            shape="circle"
+            coords="343,334,50"
+            href="diningroom.html"
+            alt="Dining Room"
+            title="dinning"
+          >
+
+          <area
+            shape="rect"
+            coords="187,289,290,388"
+            href="kitchen.html"
+            alt="Kitchen"
+            title="kitchen"
+          >
+
+          <area
+            shape="rect"
+            coords="199,111,349,282"
+            href="livingroom.html"
+            alt="Living Room"
+            title="living room"
+          >
+        </map>
+      </div>
+
+      <nav aria-label="Room navigation">
+        <ul class="room-links">
+          <li><a href="apartment.html">Apartment</a></li>
+          <li class="separator">|</li>
+          <li><a href="bedroom.html">Bedroom 1</a></li>
+          <li class="separator">|</li>
+          <li><a href="bedroom.html">Bedroom 2</a></li>
+          <li class="separator">|</li>
+          <li><a href="diningroom.html">Dining Room</a></li>
+          <li class="separator">|</li>
+          <li><a href="kitchen.html">Kitchen</a></li>
+          <li class="separator">|</li>
+          <li><a href="livingroom.html">Living Room</a></li>
+        </ul>
+      </nav>
+
+      <section class="room-detail">
+        <h2>Dining Room Detail</h2>
+        <img
+          src="media/diningroom_lg.jpg"
+          alt=" dining room with table, chairs, and modern lighting fixtures"
+          title="dining room"
+        >
+        <p>
+          The dining room is perfect for family meals and entertaining guests.
+          It features a beautiful dining set and elegant lighting.
+        </p>
+      </section>
+
+      <div class="services">
+        <h2>Apartment services:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Day/Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Gym</th>
+              <td rowspan="2">
+                Monday-Friday 6am - 10pm<br >
+                Saturday 8am - 8pm<br >
+                Sunday 8am - 5pm
+              </td>
+            </tr>
+            <tr>
+              <th>Pool</th>
+            </tr>
+            <tr>
+              <td>Laundry</td>
+              <td>24/7</td>
+            </tr>
+            <tr>
+              <td class="notice" colspan="2">
+                Please do not allow people you do not know to use these
+                facilities.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        For more information contact:
+        <a href="mailto:apartment@example.com">apartment@example.com</a> or
+        <a href="tel:9055551234">(905) 555-1234</a>
+      </p>
+      <p>&copy; Sandy and Leslie 2022</p>
+    </footer>
+  </body>
+</html>

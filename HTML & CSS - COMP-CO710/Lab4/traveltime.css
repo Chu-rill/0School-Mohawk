@@ -1,0 +1,86 @@
+/* CO710 Statement of Authorship
+I Churchill Daniel, 000983683 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else. */
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  display: none;
+}
+header {
+  min-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 20px;
+}
+header a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: #0172ba;
+  text-decoration: none;
+  border-radius: 50px;
+  justify-self: end;
+}
+header a:hover {
+  background-color: #089247;
+}
+nav {
+  background-color: #ecf7fe;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+  min-width: 520px;
+  border: 1px solid #0172ba;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  height: 40px;
+  width: 100px;
+  background-color: #ceecfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #0172ba;
+  border-radius: 20px 0;
+}
+nav a:hover {
+  background-color: #ecf7fe;
+}
+
+footer {
+  margin-top: 20px;
+  background-image: url("images/newhampshire.jpg");
+  width: 100%;
+  height: 380px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+  background-size: cover;
+}
+footer div p:nth-child(1) {
+  font-weight: bold;
+}
+#footer_center h2 {
+  color: #0172ba;
+  background-color: transparent;
+  margin-top: 4em;
+}
+#socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#right_top {
+  margin-bottom: 50px;
+}

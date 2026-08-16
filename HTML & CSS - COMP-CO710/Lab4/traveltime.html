@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- CO710 Statement of Authorship
+I Churchill Daniel, 000983683 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else. -->
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="traveltime.css" >
+    <style>
+
+      h2 {
+        color: white;
+        background-color: #0172ba;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      main {
+        display: grid;
+        grid-template-columns: minmax(200px, 1fr) 3fr 200px;
+        column-gap: 10px;
+        margin-top: 10px;
+        padding: 0 3em;
+      }
+      article img {
+        margin: 15px;
+      }
+      #canoe_type {
+        margin-top: 10px;
+      }
+      #mountains_hike {
+        margin-bottom: 20px;
+      }
+      #mountains_hike img {
+        float: left;
+      }
+      #winter_hike img {
+        float: right;
+      }
+      #ads img {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 30px;
+      }
+      #canoe_ul {
+        margin-left: 20px;
+      }
+      #trails {
+        background-color: #ecf7fe;
+        border: 1px solid black;
+        margin-top: 10px;
+      }
+      #trail_grid {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr;
+      }
+      #trail_grid p {
+        margin: 0 auto;
+        height: 100%;
+        width: 1px;
+        background-color: black;
+      }
+      #trails_title {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .trail_ul h3 {
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .trail_ul li {
+        margin-left: 30px;
+      }
+      #gallery_section {
+        width: 100%;
+      }
+      #gallery_flex {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0 auto 20px auto;
+      }
+
+      #gallery_flex li {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+      }
+      .img_resize {
+        width: 150px;
+        height: auto;
+      }
+      .hr_line {
+        height: 1px;
+        background-color: #0172ba;
+        width: 100%;
+      }
+      #credit_section {
+        padding: 0 10px;
+      }
+      #credit_section_p {
+        text-align: center;
+      }
+
+    </style>
+    <title>Travel Time</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logos/traveltimehorizontal.png" alt="page logo" >
+      <a href="#">Sign in</a>
+      <h1>.</h1>
+    </header>
+    <nav>
+      <a href="#">About Us</a>
+      <a href="#">Countries</a>
+      <a href="#">Seminars</a>
+      <a href="#">Photos</a>
+      <a href="#">Travel</a>
+    </nav>
+    <main>
+      <section>
+        <h2>Canoeing</h2>
+        <p>
+          Canoeing is an activity which involves paddling a canoe with a
+          single-bladed paddle. Common meanings of the term are limited to when
+          the canoeing is the central purpose of the activity. Broader meanings
+          include when it is combined with other activities such as canoe
+          camping, or where canoeing is merely a transportation method used to
+          accomplish other activities. Most present-day canoeing is done as or
+          as a part of a sport or recreational activity. In some parts of Europe
+          canoeing refers to both canoeing and kayaking, with a canoe being
+          called an open canoe.
+        </p>
+        <br>
+        <p>
+          Canoes were developed by cultures all over the world, including some
+          designed for use with sails or outriggers. Until the mid-1800s the
+          canoe was an important means of transport for exploration and trade,
+          and in some places it still is used as such, perhaps with the addition
+          of an outboard motor. Where the canoe played a key role in history,
+          such as the northern United States, Canada, and New Zealand, it
+          remains an important theme in popular culture.
+        </p>
+        <h2 id="canoe_type">Types of Canoes</h2>
+        <ul id="canoe_ul">
+          <li>Sprint</li>
+          <li>Slalom and wildwater</li>
+          <li>Marathon</li>
+          <li>General Recreation</li>
+          <li>Touring and camping</li>
+          <li>Freestyle</li>
+        </ul>
+      </section>
+      <article>
+        <h2>Hiking</h2>
+        <div id="mountains_hike">
+          <img
+            src="images/hiking150/hikingmountains150.jpg"
+            alt="hiking mountains"
+          >
+          <p>
+            In the United States, Canada, the Republic of Ireland, and United
+            Kingdom, hiking means walking outdoors on a trail, or off trail, for
+            recreational purposes. A day hike refers to a hike that can be
+            completed in a single day. However, in the United Kingdom, the word
+            walking is also used, as well as rambling, while walking in
+            mountainous areas is called hillwalking. In Northern England,
+            Including the Lake District and Yorkshire Dales, fellwalking
+            describes hill or mountain walks, as fell is the common word for
+            both features there.
+          </p>
+        </div>
+        <div id="winter_hike">
+          <img src="images/hiking150/winterhiker150.jpg" alt="winter hiker" >
+          <p>
+            Hiking sometimes involves bushwhacking and is sometimes referred to
+            as such. This specifically refers to difficult walking through dense
+            forest, undergrowth, or bushes, where forward progress requires
+            pushing vegetation aside. In extreme cases of bushwhacking, where
+            the vegetation is so dense that human passage is impeded, a machete
+            is used to clear a pathway. The Australian term bushwalking refers
+            to both on and off-trail hiking. Common terms for hiking used by New
+            Zealanders are tramping (particularly for overnight and longer
+            trips), walking or bushwalking. Trekking is the preferred word used
+            to describe multi-day hiking in the mountainous regions of India,
+            Pakistan, Nepal, North America, South America, Iran, and the
+            highlands of East Africa. Hiking a long-distance trail from
+            end-to-end is also referred to as trekking and as thru-hiking in
+            some places. In North America, multi-day hikes, usually with
+            camping, are referred to as backpacking.
+          </p>
+        </div>
+        <section id="trails">
+          <h3 id="trails_title">Trails - 2023/2024</h3>
+          <div id="trail_grid">
+            <section class="trail_ul">
+              <h3>National Parks (partial list)</h3>
+              <ul>
+                <li>Banff National Park</li>
+                <li>Cape Breton Highlands National Park</li>
+                <li>Point Pelee National Park</li>
+              </ul>
+            </section>
+            <p></p>
+            <section class="trail_ul">
+              <h3>Provincial Parks (partial list)</h3>
+              <ul>
+                <li>Bronte Creek Provincial Park</li>
+                <li>Rock Point Provincial Park</li>
+                <li>Selkirk Provincial Park</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </article>
+      <aside id="ads">
+        <img src="images/ads/mountainsThinkBig.jpg" alt="ads_1" >
+        <img src="images/ads/greymountain.jpg" alt="ads_2" >
+      </aside>
+    </main>
+    <section id="gallery_section">
+      <h2>Gallery</h2>
+
+      <ul id="gallery_flex">
+        <li>
+          <img src="images/outdoor150/outdoor150-1.jpg" alt="outdoor_1" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-2.jpg" alt="outdoor_2" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-3.jpg" alt="outdoor_3" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-4.jpg" alt="outdoor_4" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-5.jpg" alt="outdoor_5" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-6.jpg" alt="outdoor_6" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-7.jpg" alt="outdoor_7" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-8.jpg" alt="outdoor_8" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-9.jpg" alt="outdoor_9" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-10.jpg" alt="outdoor_10" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-11.jpg" alt="outdoor_11" >
+        </li>
+        <li>
+          <img src="images/outdoor150/outdoor150-12.jpg" alt="outdoor_12" >
+        </li>
+        <li>
+          <img
+            class="img_resize"
+            src="images/outdoor150/outdoor150-13.jpg"
+            alt="outdoor_13"
+          >
+        </li>
+        <li>
+          <img
+            class="img_resize"
+            src="images/outdoor150/outdoor150-14.jpg"
+            alt="outdoor_14"
+          >
+        </li>
+        <li>
+          <img
+            class="img_resize"
+            src="images/outdoor150/outdoor150-15.jpg"
+            alt="outdoor_15"
+          >
+        </li>
+      </ul>
+    </section>
+    <section id="credit_section">
+      <p class="hr_line"></p>
+      <h3 id="credit_section_p">Credits</h3>
+      <p>
+        Text content was obtained from appropriate Wikipedia pages. Images were
+        obtained from unsplash.com, social media buttons were generated at
+        iconmonstr.com and logos were created at logomaker.com. License
+        agreements for images do not require citation for non-profit use.
+      </p>
+      <p class="hr_line"></p>
+    </section>
+    <footer>
+      <div id="footer_left">
+        <p>About Us</p>
+        <p class="hr_line"></p>
+        <p>Who we are</p>
+        <p>What we stand for</p>
+        <p>How you can help</p>
+      </div>
+      <section id="footer_center">
+        <h2>Travel Time</h2>
+        <div id="socials">
+          <a href="https://twitter.com" title="twitter"
+            ><img src="images/socialmedia/twitter32.png" alt="twitter"
+          ></a>
+          <a href="https://www.instagram.com" title="instagram"
+            ><img src="images/socialmedia/instagram32.png" alt="instagram"
+          ></a>
+          <a href="https://ca.pinterest.com/" title="pinterest"
+            ><img src="images/socialmedia/pinterest32.png" alt="pinterest"
+          ></a>
+          <a href="https://www.youtube.com/" title="youtube"
+            ><img src="images/socialmedia/youtube32.png" alt="youtube"
+          ></a>
+          <a href="mailto:info@example.com" title="email"
+            ><img src="images/socialmedia/emailat32.png" alt="email"
+          ></a>
+        </div>
+      </section>
+      <div id="footer_right">
+        <div id="right_top">
+          <p>Seminars</p>
+          <p class="hr_line"></p>
+          <p>Trip Planning</p>
+          <p>Hiking</p>
+          <p>Camping</p>
+        </div>
+
+        <div id="right_bottom">
+          <p>Countries</p>
+          <p class="hr_line"></p>
+          <p>Belgium</p>
+          <p>Canada</p>
+          <p>China</p>
+          <p>Copenhagen</p>
+          <p>Cyprus</p>
+          <p>Greece</p>
+          <p>India</p>
+          <p>Italy</p>
+          <p>Japan</p>
+          <p>New Zealand</p>
+          <p>Nigeria</p>
+          <p>Turkey</p>
+          <p>United States</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

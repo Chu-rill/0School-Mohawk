@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <!--
+       CO710 Statement of Authorship
+        I Churchill Daniel, 000983683 certify that this material is
+        my original work, Source code provided by the course text publisher was
+        modified entirely by me. No other person's work has been used
+        without due acknowledgement. I have not made my work
+        available to anyone else.
+
+        Date: January 19th, 2026
+    -->
+    <title>Object Oriented Programming</title>
+  </head>
+  <body>
+    <h1>Object Oriented Programming</h1>
+    <img src="images/fourConceptsOriginal.jpg" alt="four-concepts-OOP" >
+    <h2>Background</h2>
+    <p>
+      By the late 1970's procedural programming languages had hit a practical
+      limit on size and complexity. A new language design was needed to allow
+      software to grow larger and more complex. Modelled after relationships
+      appearing in nature, corporate structure and other human activity Object
+      Oriented Programming was invented. C++, pronounced See Plus Plus, was one
+      of the first major languages to leverage this design paradigm. C++ remains
+      popular today.
+    </p>
+
+    <h2>Software Students</h2>
+    <p>
+      Understanding the four principles listed below are critical to your
+      development as a programmer and as a system desgner. You will be using
+      them in many modern languages such as Java and .Net programming. OOP
+      enables rapid application development of larger and more complex systems
+      compared to a procedural language.
+    </p>
+
+    <h2>Networking/Security Students</h2>
+    <p>
+      As a system administrator you will need to understand these concepts as
+      well because they appear in relational databases, cloud computing, Windows
+      Registry, Powershell, and file system management. Though you may not be
+      writting a lot of code yourself, you will be responsible for deciding if a
+      particular application should be allowed to run on your server. You will
+      be involved in diagnosisng errors, troubleshooting and repairing faulty
+      products.
+    </p>
+
+    <h2>Four Concepts</h2>
+    <ol>
+      <li>
+        <strong>Encapsulation</strong>
+        <ul>
+          <li>
+            Combines data (think variables) with the code (method or procedure)
+            that operates on that data into a single unit.
+          </li>
+          <li>
+            It is possible to restrict access to some of the data by making it
+            private.
+          </li>
+          <li>
+            You get to design the publicly available interface to that data
+          </li>
+          <li>
+            The Class is a template or set of instructions for how to
+            instantiate an object.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Inheritance</strong>
+        <ul>
+          <li>Picking up behaviours from a parent.</li>
+          <li>
+            Every class has at least one parent (the details vary by language).
+          </li>
+          <li>A parent can have many children.</li>
+          <li>
+            The designer puts all common attributes as high in the heirarchy as
+            possible. For example, if you have a heirarchy that look like this:
+            Animal &#8594; Mammal &#8594; Canine &#8594; Husky &#8211; the age
+            property would go into the Animal Class because all Animals have an
+            age. This way if you also design another heirarchy Animal &#8594;
+            Bird &#8594; Eagle &#8211; the Eagle Class will automatically pick
+            up the age property from the Animal Class without having to redefine
+            it.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Abstraction</strong>
+        <ul>
+          <li>Publicly expose an interface and hide implementation details.</li>
+          <li>
+            For example: most cars are driven the same way using a steering
+            wheel, turn signals, brake pedal on the left and acclerator on the
+            right. Many cars from Europe, USA, and Asia use this interface
+            making it easy for people to move from one vehicle to another and
+            feel like they know how to drive. The details of how the car is
+            manufactured and how the engine and transmission are implemented are
+            very different across different car models and companies.
+          </li>
+          <li>
+            Implemented through abstract classes and interfaces (the details
+            vary by language).
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Polymorphism</strong>
+        <ul>
+          <li>Literally means "many forms".</li>
+          <li>
+            A child can get behaviours from it's parent and have it's own unique
+            behaviours.
+          </li>
+          <li>Typically achieved through inheritance.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Code Sample in Java from a Minesweeper Game</h2>
+
+    <pre>
+     <sub>
+       public class MineButton extends Button {
+          private int row;
+          private int column;
+          public MineButton(int r, int c){
+          row = r;
+          column = c;
+          }
+          public int getRow(){
+          return row;
+          }
+          public int getColumn(){
+          return column;
+          }
+      }
+     </sub>
+    </pre>
+
+    <cite
+      >The image was taken from:
+      https://atlacademy.az/en/post/73-what-is-oop?</cite
+    >
+  </body>
+</html>

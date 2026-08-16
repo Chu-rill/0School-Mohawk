@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- CO710 Statement of Authorship
+I Churchill Daniel, 000983683 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else. -->
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Travel Reviews</title>
+    <style>
+      form {
+        width: 80%;
+        border: 1px solid black;
+        padding: 20px;
+        margin: 10px auto;
+      }
+
+      fieldset {
+        border: 1px solid #555;
+        padding: 10px 14px 14px;
+        margin-bottom: 16px;
+        background: #fff;
+      }
+
+      legend {
+        font-size: 0.9rem;
+        padding: 0 6px;
+        color: #111;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 4px;
+        cursor: pointer;
+      }
+
+      select {
+        padding: 2px 4px;
+        font-size: 0.85rem;
+        margin-right: 6px;
+        margin-bottom: 10px;
+      }
+
+      .rating-group {
+        margin-bottom: 10px;
+      }
+
+      .rating-group p {
+        margin-bottom: 6px;
+      }
+
+      .rating-option {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 3px;
+      }
+
+      .stars {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+      }
+
+      .comments-label {
+        margin-bottom: 4px;
+      }
+
+      textarea {
+        width: 420px;
+        height: 110px;
+        resize: both;
+        border: 1px solid #888;
+        padding: 4px;
+        font-size: 0.85rem;
+        display: block;
+      }
+
+      .checkbox-option {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 4px;
+      }
+
+      .other-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 4px;
+      }
+
+      .other-row input[type="text"] {
+        border: 1px solid #888;
+        padding: 2px 4px;
+        font-size: 0.85rem;
+        width: 160px;
+        background: #fff;
+      }
+
+      select[multiple] {
+        width: 160px;
+        height: 90px;
+        margin-bottom: 12px;
+        border: 1px solid #888;
+        font-size: 0.85rem;
+      }
+
+      .about-you p {
+        margin-bottom: 10px;
+        font-size: 0.88rem;
+      }
+
+      .field-group {
+        margin-bottom: 10px;
+      }
+
+      .field-group label {
+        font-weight: bold;
+        margin-bottom: 3px;
+        display: block;
+      }
+
+      .field-group input[type="text"],
+      .field-group input[type="tel"],
+      .field-group input[type="email"] {
+        background-color: #b6d4ce;
+        border: 1px solid #888;
+        padding: 3px 6px;
+        font-size: 0.85rem;
+        width: 160px;
+        display: block;
+      }
+
+      input::placeholder {
+        color: #444;
+        font-size: 0.82rem;
+      }
+
+      .btn-row {
+        display: flex;
+        gap: 8px;
+        margin-top: 4px;
+      }
+
+      .buttons {
+        background-color: #b6d4ce;
+        border: 1px solid #666;
+        padding: 5px 14px;
+        font-size: 0.82rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .buttons:hover {
+        background-color: #9fc0ba;
+      }
+      #screenshot {
+        display: flex;
+        width: 80%;
+        margin: 20px auto;
+      }
+    </style>
+    <link rel="stylesheet" href="printstyles.css" media="print" >
+    <link rel="stylesheet" href="travelstyles.css" >
+    <link rel="stylesheet" href="mobile.css" >
+  </head>
+  <body>
+    <header>
+      <h1>Travel Reviews</h1>
+      <h2>2026/2027</h2>
+    </header>
+    <nav>
+      <a href="#">About Us</a>
+      <a href="#">Countries</a>
+      <a href="seminars.html">Seminars</a>
+      <a href="#">Photos</a>
+      <a href="#">Travel</a>
+    </nav>
+
+    <form
+      action="https://csunix.mohawkcollege.ca/tooltime/showit.pl"
+      method="post"
+    >
+      <fieldset>
+        <legend>Trip Reviews</legend>
+
+        <div>
+          <select name="trip">
+            <option value="north_america" selected>North America</option>
+            <option value="south_america">South America</option>
+            <option value="asia">Asia</option>
+            <option value="africa">Africa</option>
+          </select>
+          <select name="duration">
+            <option value="7">7 Days</option>
+            <option value="14">14 Days</option>
+            <option value="21">21 Days</option>
+          </select>
+        </div>
+
+        <div class="rating-group">
+          <p>Your rating:</p>
+
+          <div class="rating-option">
+            <input type="radio" name="rating" id="r5" value="5" checked />
+            <label for="r5" class="stars"
+              ><img src="images/5star.png" alt="5_star"
+            ></label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" name="rating" id="r4" value="4" />
+            <label for="r4" class="stars"
+              ><img src="images/4star.png" alt="4_star"
+            ></label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" name="rating" id="r3" value="3" />
+            <label for="r3" class="stars"
+              ><img src="images/3star.png" alt="3_star"
+            ></label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" name="rating" id="r2" value="2" />
+            <label for="r2" class="stars"
+              ><img src="images/2star.png" alt="2_star"
+            ></label>
+          </div>
+          <div class="rating-option">
+            <input type="radio" name="rating" id="r1" value="1" />
+            <label for="r1" class="stars"
+              ><img src="images/1star.png" alt="1_star"
+            ></label>
+          </div>
+        </div>
+
+        <div class="comments-label">Comments</div>
+        <textarea name="comments"></textarea>
+      </fieldset>
+
+      <!-- Interested trips fieldset -->
+      <fieldset>
+        <legend>
+          I would be interested trips to these areas: (check all that apply)
+        </legend>
+
+        <div class="checkbox-option">
+          <input type="checkbox" id="africa" name="interested" value="africa" />
+          <label for="africa">Africa</label>
+        </div>
+        <div class="checkbox-option">
+          <input type="checkbox" id="asia" name="interested" value="asia" />
+          <label for="asia">Asia</label>
+        </div>
+        <div class="checkbox-option">
+          <input
+            type="checkbox"
+            id="north_america"
+            name="interested"
+            value="north_america"
+          />
+          <label for="north_america">North America</label>
+        </div>
+        <div class="checkbox-option">
+          <input
+            type="checkbox"
+            id="south_america"
+            name="interested"
+            value="south_america"
+            checked
+          />
+          <label for="south_america">South America</label>
+        </div>
+        <div class="other-row">
+          <input type="checkbox" id="other" name="interested" value="other" />
+          <label for="other">Other (please specify)</label>
+          <input type="text" name="other_specify" />
+        </div>
+      </fieldset>
+
+      <!-- About You fieldset -->
+      <fieldset>
+        <legend>About You (optional)</legend>
+
+        <div class="about-you">
+          <p>I usually prefer these types of trips (select all that apply):</p>
+          <select multiple name="trip_types">
+            <option value="cruise">Cruise</option>
+            <option value="cultural">Cultural/Historic</option>
+            <option value="cycling">Cycling</option>
+            <option value="hiking">Hiking</option>
+            <option value="safari">Safari</option>
+            <option value="beach">Beach</option>
+            <option value="adventure">Adventure</option>
+          </select>
+
+          <div class="field-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" max="20" />
+          </div>
+          <div class="field-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" max="20" />
+          </div>
+          <div class="field-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="123-456-7890"
+            />
+          </div>
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+            />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Buttons -->
+      <div class="btn-row">
+        <input type="submit" value="Send Feedback" class="buttons" />
+        <input type="reset" value="Cancel" class="buttons" />
+      </div>
+    </form>
+    <img
+      src="images/Screenshot 2026-03-26 at 9.59.13 PM.png"
+      id="screenshot"
+      alt="input form screenshot"
+    >
+    <footer>
+      <img src="images/outdooradventurehorizontal.png" alt="footer" >
+    </footer>
+  </body>
+</html>

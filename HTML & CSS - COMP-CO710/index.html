@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+        CO710 Statement of Authorship
+        I Churchill Daniel, 000983683 certify that this material is
+        my original work. No other person's work has been used
+        without due acknowledgement. I have not made my work
+        available to anyone else.
+        Date: January 19th, 2026
+    -->
+    <title>CO710 Churchill Daniel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        background-color: #0d0d0f;
+        color: #e8e4d9;
+        font-family: "Space Mono", monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .page-bg {
+        position: fixed;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px
+          );
+        background-size: 48px 48px;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .card {
+        position: relative;
+        z-index: 1;
+        max-width: 560px;
+        width: 100%;
+        background: #141418;
+        border: 1px solid #2e2e38;
+        border-radius: 2px;
+        overflow: hidden;
+        animation: fadeUp 0.6s ease both;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .card-header {
+        background: #1b1b22;
+        border-bottom: 1px solid #2e2e38;
+        padding: 2rem 2.5rem;
+        position: relative;
+      }
+
+      .tag {
+        display: inline-block;
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #7b7b9a;
+        margin-bottom: 1rem;
+        padding: 4px 8px;
+        border: 1px solid #2e2e38;
+        border-radius: 2px;
+      }
+
+      .name {
+        font-family: "Fraunces", serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: clamp(1.6rem, 4vw, 2.2rem);
+        color: #f0ede4;
+        line-height: 1.2;
+        margin-bottom: 0.25rem;
+      }
+
+      .student-id {
+        font-size: 18px;
+        color: #5a5a72;
+        letter-spacing: 0.08em;
+      }
+
+      .dot {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #3d8c5c;
+        box-shadow: 0 0 6px #3d8c5c;
+      }
+
+      .lab-list {
+        list-style: none;
+        padding: 0.75rem 0;
+      }
+
+      .lab-list li {
+        border-bottom: 1px solid #1e1e26;
+        animation: fadeUp 0.5s ease both;
+      }
+
+      .lab-list li:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .lab-list li:nth-child(2) {
+        animation-delay: 0.18s;
+      }
+      .lab-list li:nth-child(3) {
+        animation-delay: 0.26s;
+      }
+      .lab-list li:nth-child(4) {
+        animation-delay: 0.34s;
+      }
+
+      .lab-list li:last-child {
+        border-bottom: none;
+      }
+
+      .lab-list a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2.5rem;
+        text-decoration: none;
+        color: #c8c4bb;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        transition:
+          background 0.15s ease,
+          color 0.15s ease;
+      }
+
+      .lab-list a:hover {
+        background: #1e1e28;
+        color: #f0ede4;
+      }
+
+      .lab-list a:hover .arrow {
+        transform: translateX(4px);
+      }
+
+      .lab-num {
+        font-size: 10px;
+        color: #5a5a72;
+        min-width: 20px;
+      }
+
+      .lab-label {
+        flex: 1;
+      }
+
+      .arrow {
+        font-size: 11px;
+        color: #3d8c5c;
+        transition: transform 0.15s ease;
+      }
+
+      .card-footer {
+        padding: 1rem 2.5rem;
+        border-top: 1px solid #1e1e26;
+        background: #111115;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-text {
+        font-size: 10px;
+        color: #3a3a50;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .footer-course {
+        font-size: 16px;
+        color: #3d8c5c;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-bg"></div>
+    <div class="card">
+      <div class="card-header">
+        <div class="dot"></div>
+        <div class="tag">Mohawk College &mdash; Web Development</div>
+        <h2 class="name">Churchill Daniel</h2>
+        <p class="student-id">000983683</p>
+      </div>
+      <ol class="lab-list">
+        <li>
+          <a href="Lab1/OOP.html"
+            ><span class="lab-num">01</span
+            ><span class="lab-label">Lab One</span
+            ><span class="arrow">→</span></a
+          >
+        </li>
+        <li>
+          <a href="Lab2/bookclub.html"
+            ><span class="lab-num">02</span
+            ><span class="lab-label">Lab Two</span
+            ><span class="arrow">→</span></a
+          >
+        </li>
+        <li>
+          <a href="Lab3/everyChildMatters.html"
+            ><span class="lab-num">03</span
+            ><span class="lab-label">Lab Three</span
+            ><span class="arrow">→</span></a
+          >
+        </li>
+        <li>
+          <a href="Lab4/traveltime.html"
+            ><span class="lab-num">04</span
+            ><span class="lab-label">Lab Four</span
+            ><span class="arrow">→</span></a
+          >
+        </li>
+        <li>
+          <a href="Lab5/reviews.html"
+            ><span class="lab-num">05</span
+            ><span class="lab-label">Lab Five</span
+            ><span class="arrow">→</span></a
+          >
+        </li>
+        <li>
+          <a href="Lab6/apartment.html"
+            ><span class="lab-num">06</span
+            ><span class="lab-label">Lab Six</span
+            ><span class="arrow">→</span></a
+          >
+        </li>
+      </ol>
+      <div class="card-footer">
+        <!-- <span class="footer-text">Jan 19, 2026</span> -->
+        <span class="footer-course">CO710</span>
+      </div>
+    </div>
+  </body>
+</html>

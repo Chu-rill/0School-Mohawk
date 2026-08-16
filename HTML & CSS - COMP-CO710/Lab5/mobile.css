@@ -1,0 +1,66 @@
+/* CO710 Statement of Authorship
+I Churchill Daniel, 000983683 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else. */
+nav a {
+  background-color: #b6d4ce;
+  color: white;
+  text-decoration: none;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0;
+  border: 2px solid black;
+}
+
+/* ==============
+    0px to 599px
+   ==============
+*/
+@media only screen and (max-width: 599px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* ================
+    600px to 899px
+   ================
+*/
+@media only screen and (max-width: 899px) {
+  nav {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* ===================
+    900px and greater
+   ===================
+*/
+@media only screen and (min-width: 900px) {
+  nav {
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}

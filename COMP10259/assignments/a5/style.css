@@ -1,0 +1,11 @@
+/*
+  Name: Churchill Daniel
+  Student Number: 000983683
+  Course: COMP 10259 - Client-Side Web Programming
+*/
+
+.card-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}

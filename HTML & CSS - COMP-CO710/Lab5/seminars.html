@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- CO710 Statement of Authorship
+I Churchill Daniel, 000983683 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else. -->
+    <meta charset="UTF-8" > 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Travel Seminars</title>
+    <link rel="stylesheet" href="travelstyles.css" >
+    <link rel="stylesheet" href="printstyles.css" media="print" >
+    <link rel="stylesheet" href="mobile.css" >
+    <style>
+      main {
+        max-width: 80%;
+        margin: 24px auto;
+        padding: 0 16px 40px;
+      }
+      .legend {
+        border: none;
+        border-collapse: collapse;
+      }
+      .legend caption {
+        text-align: left;
+        font-weight: bold;
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+      }
+
+      .legend td {
+        border: none;
+        padding: 2px 14px 2px 4px;
+        font-size: 0.88rem;
+        vertical-align: middle;
+      }
+
+      .region {
+        display: inline-block;
+        width: 18px;
+        height: 14px;
+        margin-right: 5px;
+        vertical-align: middle;
+        border: 1px solid #aaa;
+      }
+
+      .region-na {
+        background-color: #b6d4ce;
+      }
+      .region-sa {
+        background-color: #5993c7;
+      }
+      .region-asia {
+        background-color: #a19372;
+      }
+      .region-afr {
+        background-color: #f4af60;
+      }
+
+      .schedule {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        font-size: 0.95rem;
+        margin-top: 6px;
+      }
+
+      .schedule caption {
+        text-align: right;
+        font-size: 0.72rem;
+        color: #555;
+        padding: 4px 0 2px;
+        caption-side: bottom;
+      }
+
+      .schedule th {
+        border: 1px solid black;
+        padding: 10px 12px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .schedule td {
+        border: 1px solid black;
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: middle;
+      }
+      .schedule thead th {
+        background-color: #72b57d;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      .schedule tbody th {
+        background-color: #72b57d;
+        font-weight: bold;
+        white-space: nowrap;
+        width: 68px;
+      }
+
+      .na {
+        background-color: #b6d4ce;
+      }
+      .sa {
+        background-color: #5993c7;
+      }
+      .asia {
+        background-color: #a19372;
+      }
+      .afr {
+        background-color: #f4af60;
+      }
+
+      .no-sem {
+        background-color: #5993c7;
+        font-weight: bold;
+      }
+
+      .no-sem-full {
+        background-image: url("images/dust.jpg");
+        text-align: center;
+      }
+
+      td.empty {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Travel Seminars</h1>
+      <h2>2026/2027</h2>
+    </header>
+    <nav>
+      <a href="">About Us</a>
+      <a href="">Countries</a>
+      <a href="">Seminars</a>
+      <a href="">Photos</a>
+      <a href="">Travel</a>
+    </nav>
+    <main>
+      <table class="legend">
+        <caption>
+          Legend:
+        </caption>
+        <tbody>
+          <tr>
+            <td><span class="region region-na"></span>North America</td>
+            <td><span class="region region-sa"></span>South America</td>
+            <td><span class="region region-asia"></span>Asia</td>
+            <td><span class="region region-afr"></span>Africa</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="schedule">
+        <caption>
+          Schedule is subject to change
+        </caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>7 am - 9 am</th>
+            <th>9 am - 11 am</th>
+            <th>11 am - 12 pm</th>
+            <th>12 pm - 2 pm</th>
+            <th>2 pm - 4 pm</th>
+            <th>6 pm - 8 pm</th>
+            <th>8 pm - 10 pm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Monday</th>
+            <td class="na">North America</td>
+            <td class="asia">Asia</td>
+            <td class="afr" id="afr_monday" colspan="4">Africa</td>
+            <td class="na" rowspan="2">North America</td>
+          </tr>
+
+          <tr>
+            <th>Tuesday</th>
+            <td class="afr" rowspan="4">Africa</td>
+            <td class="na" colspan="2">North America</td>
+            <td class="empty"></td>
+            <td class="asia" colspan="2">Asia</td>
+          </tr>
+
+          <tr>
+            <th>Wednesday</th>
+            <td class="asia" colspan="3" rowspan="2">Asia</td>
+            <td class="na">North America</td>
+            <td class="sa" colspan="2" rowspan="2">South America</td>
+          </tr>
+
+          <tr>
+            <th>Thursday</th>
+            <td class="empty"></td>
+          </tr>
+
+          <tr>
+            <th>Friday</th>
+            <td class="sa" colspan="5">South America</td>
+            <td class="no-sem-full">No Seminars</td>
+          </tr>
+
+          <tr>
+            <th>Saturday</th>
+            <td class="sa" rowspan="2">South America</td>
+            <td class="empty"></td>
+            <td class="na">North America</td>
+            <td class="afr" rowspan="2">Africa</td>
+            <td class="sa" rowspan="2">South America</td>
+            <td class="asia" colspan="2" rowspan="2">Asia</td>
+          </tr>
+
+          <tr>
+            <th>Sunday</th>
+            <td class="afr" colspan="1">Africa</td>
+            <td class="empty"></td>
+          </tr>
+
+          <tr>
+            <th>Holidays</th>
+            <td colspan="7" class="no-sem-full">No seminars</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img src="images/outdooradventurehorizontal.png" alt="footer" >
+    </footer>
+  </body>
+</html>

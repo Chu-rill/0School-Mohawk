@@ -1,0 +1,152 @@
+/* 10259 Statement of Authorship
+I Churchill Daniel, 000983683 certify that this material is
+my original work. No other person's work has been used
+without due acknowledgment. I have not made my work
+available to anyone else.
+
+Date: May 23, 2026  */
+#header_animation {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  background-color: #87ceeb;
+}
+#header_animation .clouds-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* two cloud images wide */
+  height: 100%;
+  display: flex;
+  animation: scroll-clouds 12s linear infinite;
+}
+#header_animation .clouds-track img {
+  width: 50%; /* each copy = full container width */
+  height: 100%;
+  object-fit: fill;
+}
+#header_animation .f1-car {
+  position: absolute;
+  bottom: 30px;
+  width: 180px;
+  height: auto;
+  animation: drive-car 6s linear infinite;
+}
+
+@keyframes scroll-clouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes drive-car {
+  0% {
+    left: -200px;
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-13px);
+  }
+  20% {
+    transform: translateY(4px);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(-13px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+  70% {
+    transform: translateY(-6px);
+  }
+  80% {
+    transform: translateY(4px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+  100% {
+    left: 100%;
+    transform: translateY(4px);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+nav a {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  animation-name: links;
+  animation-duration: 1s;
+  color: white;
+}
+@keyframes links {
+  0% {
+    transform: rotate(0deg);
+    background-color: blue;
+  }
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-12deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(6deg);
+    background-color: purple;
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    background-color: blue;
+  }
+}
+#indexpage,
+#page2 {
+  color: gray;
+  pointer-events: none;
+}
+.contains {
+  display: flex;
+}
+.contains img {
+  width: 50%;
+  height: auto;
+  margin: 10px;
+}

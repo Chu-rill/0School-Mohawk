@@ -1,0 +1,32 @@
+/* CO710 Statement of Authorship
+   I Churchill Daniel, 000983683 certify that this material is
+   my original work. No other person's work has been used
+   without due acknowledgment. I have not made my work
+   available to anyone else.
+
+   Date: April 9, 2026 */
+ 
+@media only screen and (max-width: 600px) {
+  .floor-plan {
+    display: none;
+  }
+
+  .room-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .room-links .separator {
+    display: none;
+  }
+
+  #grid_layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-grid {
+    max-width: 100%;
+    display: flex;
+  }
+}
