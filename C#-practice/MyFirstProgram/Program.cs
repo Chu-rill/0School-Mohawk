@@ -33,4 +33,6 @@
 
 using MyFirstProgram;
 
-UserInput.Run();
+// UserInput.Run();
+
+MathTest.Run();
