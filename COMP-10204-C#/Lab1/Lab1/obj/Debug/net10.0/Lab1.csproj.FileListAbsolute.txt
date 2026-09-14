@@ -1,0 +1,15 @@
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/bin/Debug/net10.0/Lab1
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/bin/Debug/net10.0/Lab1.deps.json
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/bin/Debug/net10.0/Lab1.runtimeconfig.json
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/bin/Debug/net10.0/Lab1.dll
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/bin/Debug/net10.0/Lab1.pdb
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.AssemblyInfoInputs.cache
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.AssemblyInfo.cs
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.csproj.CoreCompileInputs.cache
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.sourcelink.json
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.dll
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/refint/Lab1.dll
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.pdb
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.genruntimeconfig.cache
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/ref/Lab1.dll
