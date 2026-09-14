@@ -9,6 +9,7 @@ public class UserInput
         
         Console.Write("What's your age: ");
         int age = Convert.ToInt32(Console.ReadLine());
+        Char single = '@';
         
         Console.WriteLine("Hello " + name);
         Console.WriteLine("He is " + age + " years old.");

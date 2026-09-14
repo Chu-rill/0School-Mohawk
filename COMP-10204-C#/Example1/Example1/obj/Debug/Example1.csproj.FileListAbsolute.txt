@@ -1,0 +1,10 @@
+C:\Users\000983683\source\repos\Example1\Example1\bin\Debug\Example1.exe.config
+C:\Users\000983683\source\repos\Example1\Example1\bin\Debug\Example1.exe
+C:\Users\000983683\source\repos\Example1\Example1\bin\Debug\Example1.pdb
+C:\Users\000983683\source\repos\Example1\Example1\obj\Debug\Example1.csproj.AssemblyReference.cache
+C:\Users\000983683\source\repos\Example1\Example1\obj\Debug\Example1.Form1.resources
+C:\Users\000983683\source\repos\Example1\Example1\obj\Debug\Example1.Properties.Resources.resources
+C:\Users\000983683\source\repos\Example1\Example1\obj\Debug\Example1.csproj.GenerateResource.cache
+C:\Users\000983683\source\repos\Example1\Example1\obj\Debug\Example1.csproj.CoreCompileInputs.cache
+C:\Users\000983683\source\repos\Example1\Example1\obj\Debug\Example1.exe
+C:\Users\000983683\source\repos\Example1\Example1\obj\Debug\Example1.pdb
