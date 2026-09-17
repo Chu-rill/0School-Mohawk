@@ -8,6 +8,14 @@ public class Employee
     private double hours;
     private decimal gross;
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="name"></param>
+    /// <param name="number"></param>
+    /// <param name="rate"></param>
+    /// <param name="hours"></param>
+    /// <param name="gross"></param>
     public Employee(string name, int number, decimal rate, double hours, decimal gross)
     {
         this.name = name;
