@@ -13,3 +13,4 @@
 /Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.pdb
 /Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/Lab1.genruntimeconfig.cache
 /Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/obj/Debug/net10.0/ref/Lab1.dll
+/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/bin/Debug/net10.0/employees.txt
