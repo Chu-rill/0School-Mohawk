@@ -31,16 +31,27 @@ internal class Lab1
             switch (choice)
             {
                 case "1":
+                    Sort(employees,choice);
+                    DisplayTable(employees);
+                    break;
                 case "2":
+                    Sort(employees,choice);
+                    DisplayTable(employees);
+                    break;
                 case "3":
+                    Sort(employees,choice);
+                    DisplayTable(employees);
+                    break;
                 case "4":
+                    Sort(employees,choice);
+                    DisplayTable(employees);
+                    break;
                 case "5":
-                    SortEmployees(employees, int.Parse(choice));
+                    Sort(employees,choice);
                     DisplayTable(employees);
                     break;
 
                 case "6":
-                    Console.WriteLine("Goodbye!");
                     running = false;
                     break;
 
@@ -51,17 +62,21 @@ internal class Lab1
         }
     }
 
-    private static string DisplayMenu()
+    static string DisplayMenu()
     {
+        string choice;
         Console.WriteLine();
-        Console.WriteLine("1. Sort by Employee Name (ascending)");
-        Console.WriteLine("2. Sort by Employee Number (ascending)");
-        Console.WriteLine("3. Sort by Employee Pay Rate (descending)");
-        Console.WriteLine("4. Sort by Employee Hours (descending)");
-        Console.WriteLine("5. Sort by Employee Gross Pay (descending)");
+        Console.WriteLine("1. Sort by Employee Name");
+        Console.WriteLine("2. Sort by Employee Number");
+        Console.WriteLine("3. Sort by Employee Pay Rate");
+        Console.WriteLine("4. Sort by Employee Hours");
+        Console.WriteLine("5. Sort by Employee Gross Pay");
+        Console.WriteLine();
         Console.WriteLine("6. Exit");
         Console.Write("Enter choice: ");
-        return Console.ReadLine() ?? string.Empty;
+        choice =  Console.ReadLine();
+        Console.WriteLine();
+        return choice;
     }
 
     /// <summary>
@@ -71,19 +86,77 @@ internal class Lab1
     /// delegate to show the equivalent, less concise form the lambdas below
     /// are shorthand for).
     /// </summary>
-    private static void SortEmployees(Employee[] employees, int choice)
+    static void Sort(Employee[] employees, string choice)
     {
-        Comparison<Employee> comparison = choice switch
+        for (int i = 0; i < employees.Length - 1; i++)
         {
-            1 => (a, b) => string.Compare(a.GetName(), b.GetName(), StringComparison.OrdinalIgnoreCase),
-            2 => delegate (Employee a, Employee b) { return a.GetNumber().CompareTo(b.GetNumber()); },
-            3 => (a, b) => b.GetRate().CompareTo(a.GetRate()),
-            4 => (a, b) => b.GetHours().CompareTo(a.GetHours()),
-            5 => (a, b) => b.GetGross().CompareTo(a.GetGross()),
-            _ => throw new ArgumentOutOfRangeException(nameof(choice), "Unknown sort option.")
-        };
+            // Real records are loaded from index 0 onward with no gaps,
+            // so once we hit a null slot, everything after it is null too.
+            if (employees[i] == null)
+            {
+                break;
+            }
 
-        Array.Sort(employees, Comparer<Employee>.Create(comparison));
+            int selected = i;
+
+            for (int j = i + 1; j < employees.Length; j++)
+            {
+                // Skip unused slots - nothing to compare them against.
+                if (employees[j] == null)
+                {
+                    continue;
+                }
+
+                if (choice == "1")
+                {
+                    if (String.Compare(employees[j].GetName(), employees[selected].GetName()) < 0)
+                    {
+                        selected = j;
+                    }
+                }
+
+                // 2. Employee Number - ascending
+                else if (choice == "2")
+                {
+                    if (employees[j].GetNumber() < employees[selected].GetNumber())
+                    {
+                        selected = j;
+                    }
+                }
+
+                // 3. Employee Pay Rate - descending
+                else if (choice == "3")
+                {
+                    if (employees[j].GetRate() > employees[selected].GetRate())
+                    {
+                        selected = j;
+                    }
+                }
+
+                // 4. Employee Hours - descending
+                else if (choice == "4")
+                {
+                    if (employees[j].GetHours() > employees[selected].GetHours())
+                    {
+                        selected = j;
+                    }
+                }
+
+                // 5. Employee Gross Pay - descending
+                else if (choice == "5")
+                {
+                    if (employees[j].GetGross() > employees[selected].GetGross())
+                    {
+                        selected = j;
+                    }
+                }
+            }
+
+            // Swap
+            Employee temp = employees[i];
+            employees[i] = employees[selected];
+            employees[selected] = temp;
+        }
     }
 
     /// <summary>
@@ -123,29 +196,7 @@ internal class Lab1
 
         return employee;
     }
-
-    /// <summary>
-    /// Parses one "name, number, rate, hours" CSV line into an Employee,
-    /// trimming stray whitespace around each field. Throws FormatException
-    /// on a malformed line so the caller can report and skip it.
-    /// </summary>
-    private static Employee ParseEmployeeLine(string line)
-    {
-        string[] fields = line.Split(',');
-
-        if (fields.Length != 4)
-        {
-            throw new FormatException($"expected 4 fields, found {fields.Length}");
-        }
-
-        string name = fields[0].Trim();
-        int number = int.Parse(fields[1].Trim());
-        decimal rate = decimal.Parse(fields[2].Trim());
-        double hours = double.Parse(fields[3].Trim());
-
-        return new Employee(name, number, rate, hours);
-    }
-
+    
     /// <summary>
     /// Prints a neatly aligned table of every employee in the array, in
     /// whatever order the array is currently sorted in.
@@ -158,6 +209,11 @@ internal class Lab1
 
         foreach (Employee e in employees)
         {
+            if (e == null)
+            {
+                break;
+            }
+            
             Console.WriteLine(
                 $"{e.GetName(),-20}{e.GetNumber(),-10}{e.GetRate(),-10:C}{e.GetHours(),-10:F2}{e.GetGross(),-12:C}"
             );
