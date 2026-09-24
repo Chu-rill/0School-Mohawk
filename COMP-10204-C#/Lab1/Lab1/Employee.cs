@@ -1,13 +1,9 @@
 namespace Lab1;
-
 /// <summary>
-/// Stores the information for a single employee: name, employee number,
-/// hourly pay rate, hours worked and the resulting gross pay.
+/// I, Churchill Daniel, 000983683 certify that this material is my original work.  No other person's work has been used without due acknowledgement.
 ///
-/// Per the UML diagram, all data is private and reached only through the
-/// Get/Set methods below (no public properties). The class performs no
-/// console/file input or output of its own - it only stores data and keeps
-/// gross pay in sync with it.
+/// 
+/// This is a class called Employee used to handle the data gotten from the txt
 /// </summary>
 public class Employee
 {
@@ -18,8 +14,8 @@ public class Employee
     private decimal gross;
 
     /// <summary>
-    /// Builds an Employee and immediately calculates its gross pay so the
-    /// object is always in a valid, accurate state.
+    /// Constructor for the class to set the value
+    /// when you make an instance of the class
     /// </summary>
     /// <param name="name">Employee's full name</param>
     /// <param name="number">Employee number</param>
@@ -63,10 +59,8 @@ public class Employee
     }
 
     /// <summary>
-    /// Recomputes gross pay from rate and hours: straight time up to 40
-    /// hours, and time-and-a-half for anything beyond that. Called from the
-    /// constructor and from any setter that touches rate or hours, so
-    /// gross is never allowed to go stale.
+    /// This method uses the formula giving in the assignment not to calculate the Gross and assigns it
+    /// when you make the class instance
     /// </summary>
     private void CalculateGross()
     {

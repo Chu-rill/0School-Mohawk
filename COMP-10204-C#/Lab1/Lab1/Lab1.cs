@@ -6,12 +6,15 @@ using System.IO;
 namespace Lab1;
 
 /// <summary>
-///I, Churchill Daniel, 000983683 certify that this material is my original work.  No other person's work has been used without due acknowledgement.
-/// Lab1 
+/// I, Churchill Daniel, 000983683 certify that this material is my original work.  No other person's work has been used without due acknowledgement.
 /// </summary>
 internal class Lab1
 {
-    
+    /// <summary>
+    /// The Main method reads the txt file calls the read method that gets back the array
+    /// runs a while loop that then gets choice from the user and continues to run till the user enters 6 to exit
+    /// <param name="args">(unused)</param>
+    /// </summary>
     private static void Main(string[] args)
     {
         string path = "/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/employees.txt";
@@ -83,9 +86,9 @@ internal class Lab1
     /// Selection Sort
     /// Organizes the elements in an array in other based on
     /// the choice selected.
-    /// https://sortvisualizer.com/selectionsort/
+    /// https://sortvisualizer.com/selectionsort/ reference to sorting algorithm used
     /// <param name="employees">The array that is to be sorted</param>
-    /// <param name="choice">String of the selected choice to determine what type of sorting would be done</param>
+    /// <param name="choice">The selected choice to determine what type of sorting would be done</param>
     /// </summary>
     static void Sort(Employee[] employees, string choice)
     {
