@@ -80,11 +80,10 @@ internal class Lab1
     }
 
     /// <summary>
-    /// Sorts the array in place. Rather than hand-rolling a sort algorithm,
-    /// each menu choice supplies Array.Sort with the comparison it needs,
-    /// expressed as a lambda (choice 2 is written as an old-style anonymous
-    /// delegate to show the equivalent, less concise form the lambdas below
-    /// are shorthand for).
+    /// Selection Sort
+    /// Organizez the elements in an array in other based on
+    /// the choice selected.
+    /// https://sortvisualizer.com/selectionsort/
     /// </summary>
     static void Sort(Employee[] employees, string choice)
     {
