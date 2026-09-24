@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+///<summary>
+///I, John Doe, 000123456 certify that this material is my original work.  No other person's work has been used without due acknowledgement.
+/// </summary>
 namespace Lab1;
 
 /// <summary>
