@@ -2,20 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-///<summary>
-///I, John Doe, 000123456 certify that this material is my original work.  No other person's work has been used without due acknowledgement.
-/// </summary>
+
 namespace Lab1;
 
 /// <summary>
-/// Lab1 console driver: loads employees from a CSV file into an array,
-/// then repeatedly menus the user through five different sorts of that
-/// array (plus Exit), displaying a formatted table after each sort.
-///
-/// Main() holds the menu loop and its switch directly; the rest of the
-/// work is broken out into small, single-purpose methods: ReadEmployees /
-/// ParseEmployeeLine (loading + validation), DisplayMenu (input),
-/// SortEmployees (sorting via lambda comparisons) and DisplayTable (output).
+///I, Churchill Daniel, 000983683 certify that this material is my original work.  No other person's work has been used without due acknowledgement.
+/// Lab1 
 /// </summary>
 internal class Lab1
 {
@@ -59,12 +51,17 @@ internal class Lab1
                     break;
 
                 default:
-                    Console.WriteLine("Invalid choice - please enter a number from 1 to 6.");
+                    Console.WriteLine("Invalid choice please enter a number between 1 to 6.");
                     break;
             }
         }
     }
 
+    /// <summary>
+    /// Display's the choice screen for the user to select what
+    /// action is to be made
+    /// it returns a string 
+    /// </summary>
     static string DisplayMenu()
     {
         string choice;
@@ -84,29 +81,25 @@ internal class Lab1
 
     /// <summary>
     /// Selection Sort
-    /// Organizez the elements in an array in other based on
+    /// Organizes the elements in an array in other based on
     /// the choice selected.
     /// https://sortvisualizer.com/selectionsort/
+    /// <param name="employees">The array that is to be sorted</param>
+    /// <param name="choice">String of the selected choice to determine what type of sorting would be done</param>
     /// </summary>
     static void Sort(Employee[] employees, string choice)
     {
         for (int i = 0; i < employees.Length - 1; i++)
         {
-            // Real records are loaded from index 0 onward with no gaps,
-            // so once we hit a null slot, everything after it is null too.
-            if (employees[i] == null)
-            {
-                break;
-            }
-
+            
             int selected = i;
 
             for (int j = i + 1; j < employees.Length; j++)
             {
-                // Skip unused slots - nothing to compare them against.
+                // break from the loop when it gets to a null slot in the array
                 if (employees[j] == null)
                 {
-                    continue;
+                    break;
                 }
 
                 if (choice == "1")
@@ -117,7 +110,7 @@ internal class Lab1
                     }
                 }
 
-                // 2. Employee Number - ascending
+
                 else if (choice == "2")
                 {
                     if (employees[j].GetNumber() < employees[selected].GetNumber())
@@ -126,7 +119,7 @@ internal class Lab1
                     }
                 }
 
-                // 3. Employee Pay Rate - descending
+
                 else if (choice == "3")
                 {
                     if (employees[j].GetRate() > employees[selected].GetRate())
@@ -135,7 +128,7 @@ internal class Lab1
                     }
                 }
 
-                // 4. Employee Hours - descending
+
                 else if (choice == "4")
                 {
                     if (employees[j].GetHours() > employees[selected].GetHours())
@@ -144,7 +137,7 @@ internal class Lab1
                     }
                 }
 
-                // 5. Employee Gross Pay - descending
+
                 else if (choice == "5")
                 {
                     if (employees[j].GetGross() > employees[selected].GetGross())
@@ -154,7 +147,7 @@ internal class Lab1
                 }
             }
 
-            // Swap
+            // Swap position make a temp var to store the value of the prevoius value
             Employee temp = employees[i];
             employees[i] = employees[selected];
             employees[selected] = temp;
@@ -162,10 +155,10 @@ internal class Lab1
     }
 
     /// <summary>
-    /// Reads employee records from a comma-separated file into an array,
-    /// skipping (and reporting) any line that fails to parse instead of
-    /// aborting the whole load. The array is trimmed to the number of
-    /// valid records actually read, so its Length is the record count.
+    /// Read method
+    /// uses the built-in file IO creates an array of type Employee with a size of 100
+    /// and inserts the content of the txt into the array and returns an array
+    ///<param name="path">String type to the file path of the txt</param>
     /// </summary>
     static Employee[] Read (string path)
     {
@@ -200,8 +193,8 @@ internal class Lab1
     }
     
     /// <summary>
-    /// Prints a neatly aligned table of every employee in the array, in
-    /// whatever order the array is currently sorted in.
+    /// Display's a formatted out-put of the table to show the sort
+    /// <param name="employees">The array that is to be displayed</param>
     /// </summary>
     private static void DisplayTable(Employee[] employees)
     {
