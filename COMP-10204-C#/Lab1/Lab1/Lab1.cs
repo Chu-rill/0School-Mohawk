@@ -6,7 +6,8 @@ using System.IO;
 namespace Lab1;
 
 /// <summary>
-/// I, Churchill Daniel, 000983683 certify that this material is my original work.  No other person's work has been used without due acknowledgement.
+/// I, Churchill Daniel, 000983683 certify that this material is my original work.
+/// No other person's work has been used without due acknowledgement.
 /// </summary>
 internal class Lab1
 {
@@ -15,7 +16,7 @@ internal class Lab1
     /// runs a while loop that then gets choice from the user and continues to run till the user enters 6 to exit
     /// <param name="args">(unused)</param>
     /// </summary>
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
         string path = "/Users/churchill/Developer/0School-Mohawk/COMP-10204-C#/Lab1/Lab1/employees.txt";
         
@@ -160,7 +161,7 @@ internal class Lab1
     /// <summary>
     /// Read method
     /// uses the built-in file IO creates an array of type Employee with a size of 100
-    /// and inserts the content of the txt into the array and returns an array
+    /// and inserts the content of the txt into the array and returns the array
     ///<param name="path">String type to the file path of the txt</param>
     /// </summary>
     static Employee[] Read (string path)

@@ -1,8 +1,6 @@
 namespace Lab1;
 /// <summary>
 /// I, Churchill Daniel, 000983683 certify that this material is my original work.  No other person's work has been used without due acknowledgement.
-///
-/// 
 /// This is a class called Employee used to handle the data gotten from the txt
 /// </summary>
 public class Employee

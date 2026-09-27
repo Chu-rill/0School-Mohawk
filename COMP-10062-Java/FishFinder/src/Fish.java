@@ -38,6 +38,7 @@ public class Fish {
         this.bodyColor = bodyColor;
         this.finColor = finColor;
 
+
         //assigning a value to the variables which is the instance of the class
         fin1 = new Fin(fSize, x + 50 * fSize, y, finColor);//fin 6
         fin2 = new Fin(fSize * 0.5, x + 5, y, finColor);//fin 1
