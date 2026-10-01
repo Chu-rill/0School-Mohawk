@@ -1,11 +1,6 @@
-class,prof_on_time,my_grade
-CSC207,1,100
-CSC209,0,90
-CSC212,1,80
-CSC214,0,70
-CSC216,1,60
-CSC218,0,50
-CSC220,1,40
-CSC222,0,30
-CSC224,1,20
-CSC226,0,10
+class,prof_on_time_percentage,my_grade
+10260,0.9,70
+C0859,0.85,75
+10278,0.95,65
+10204,0.6,75
+10066,0.9,87

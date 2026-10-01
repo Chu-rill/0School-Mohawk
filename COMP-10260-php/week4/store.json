@@ -1,0 +1,21 @@
+{
+  "fruit": {
+    "canteloupe": 10,
+    "banana": 15,
+    "tomato": 60,
+    "pumpkin": 20
+  },
+  "veg": {
+    "broccoli": 5,
+    "carrot": 100,
+    "celery": 40,
+    "potato": 70
+  },
+  "cheese": {
+    "parmesan": 2,
+    "cheddar": 50,
+    "swiss": 20,
+    "havarti": 70,
+    "feta": 3
+  }
+}
