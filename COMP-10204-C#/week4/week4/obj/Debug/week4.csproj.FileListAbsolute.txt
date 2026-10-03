@@ -1,0 +1,10 @@
+C:\Users\Churchill\source\repos\week4\week4\bin\Debug\week4.exe.config
+C:\Users\Churchill\source\repos\week4\week4\bin\Debug\week4.exe
+C:\Users\Churchill\source\repos\week4\week4\bin\Debug\week4.pdb
+C:\Users\Churchill\source\repos\week4\week4\obj\Debug\week4.csproj.AssemblyReference.cache
+C:\Users\Churchill\source\repos\week4\week4\obj\Debug\week4.Form1.resources
+C:\Users\Churchill\source\repos\week4\week4\obj\Debug\week4.Properties.Resources.resources
+C:\Users\Churchill\source\repos\week4\week4\obj\Debug\week4.csproj.GenerateResource.cache
+C:\Users\Churchill\source\repos\week4\week4\obj\Debug\week4.csproj.CoreCompileInputs.cache
+C:\Users\Churchill\source\repos\week4\week4\obj\Debug\week4.exe
+C:\Users\Churchill\source\repos\week4\week4\obj\Debug\week4.pdb
