@@ -47,13 +47,11 @@ public class Employee
     public void SetRate(decimal rate)
     {
         this.rate = rate;
-        CalculateGross();
     }
 
     public void SetHours(double hours)
     {
         this.hours = hours;
-        CalculateGross();
     }
 
     /// <summary>
