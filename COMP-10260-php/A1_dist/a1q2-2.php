@@ -34,18 +34,27 @@ if($start === null || $end === null){
         }
     }
 
+    if ($start > 47 && !$startIsFactor) {
+        $factors[] = $start;
+    }
+    if ($end > 47 && !$endIsFactor && $end !== $start) {
+        $factors[] = $end;
+    }
+
+    echo "<ul>";
     for ($i = $start; $i <= $end; $i++) {
         $divisible = false;
-        $html = "<ul>";
         foreach ($factors as $factor) {
-           if ($i % $factor === 0){
-            $html .= "<li>" . $factor . "</li>";
-           }
+            if ($i % $factor === 0) {
+                $divisible = true;
+                break;
+            }
         }
-        echo $html . "</ul>";
- 
-       
+        if (!$divisible) {
+            echo "<li>$i</li>";
+        }
     }
+    echo "</ul>";
 }
 
 ?>
