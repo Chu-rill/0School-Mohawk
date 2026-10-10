@@ -1,0 +1,7 @@
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\Lab2\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\Lab2\Lab2\bin\Debug\Lab2.exe
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\Lab2\Lab2\bin\Debug\Lab2.pdb
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\Lab2\Lab2\obj\Debug\Lab2.csproj.AssemblyReference.cache
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\Lab2\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\Lab2\Lab2\obj\Debug\Lab2.exe
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\Lab2\Lab2\obj\Debug\Lab2.pdb
