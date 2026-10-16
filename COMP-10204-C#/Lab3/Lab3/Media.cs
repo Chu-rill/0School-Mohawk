@@ -18,12 +18,12 @@ public abstract class Media : ISearchable
 {
     public string Title { get; protected set; } // Title of the media object
     public int Year { get; protected set; } // The year this media object was released
-/// <summary>
-/// Two-argument constructor sets the two properties that all Media objects have
-/// </summary>
-/// <param name="title">The title of the media object</param>
-/// <param name="year">The year of publication and/or release</param>
-public Media(string title, int year)
+    /// <summary>
+    /// Two-argument constructor sets the two properties that all Media objects have
+    /// </summary>
+    /// <param name="title">The title of the media object</param>
+    /// <param name="year">The year of publication and/or release</param>
+    public Media(string title, int year)
     {
         Title = title;
         Year = year;
@@ -41,7 +41,7 @@ public Media(string title, int year)
     /// <param name="key">The string to be searching for</param>
     /// <returns>A flag indicating whether the search string was found (true) or not
     /// (false)</returns>
-public bool Search(string key)
+    public bool Search(string key)
     {
         // Make the search case insensitive by treating strings as lowercase
         string temp = Title.ToLower();

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5C42609-B8C7-45CA-855F-5CB6F361E08F}</ProjectGuid>
+    <ProjectGuid>{3587F893-75CE-45AD-B573-8E41579A92F0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Lab3</RootNamespace>
     <AssemblyName>Lab3</AssemblyName>
@@ -45,8 +45,8 @@
   <ItemGroup>
     <Compile Include="IEncryptable.cs" />
     <Compile Include="ISearchable.cs" />
-    <Compile Include="Lab3.cs" />
     <Compile Include="Media.cs" />
+    <Compile Include="Lab3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
