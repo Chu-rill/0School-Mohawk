@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Churchill\\Desktop\\Lab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\lab3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|solutionrelative:lab3\\lab3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\lab3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|solutionrelative:lab3\\lab3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\data.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|solutionrelative:lab3\\data.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|solutionrelative:lab3\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|solutionrelative:lab3\\media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|solutionrelative:lab3\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\isearchable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|solutionrelative:lab3\\isearchable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\rot13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|solutionrelative:lab3\\rot13.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\iencryptable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|solutionrelative:lab3\\iencryptable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A1ED2A58-F041-461A-B17E-63CDD2B28166}|Lab3B\\Lab3B.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3b\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1ED2A58-F041-461A-B17E-63CDD2B28166}|Lab3B\\Lab3B.csproj|solutionrelative:lab3b\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,54 +34,54 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3B\\Form1.cs",
+              "RelativeDocumentMoniker": "Lab3B\\Form1.cs",
+              "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3B\\Form1.cs [Design]",
+              "RelativeToolTip": "Lab3B\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T19:57:33.446Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Data.txt",
-              "DocumentMoniker": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Data.txt",
-              "RelativeDocumentMoniker": "Lab3\\Data.txt",
-              "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Data.txt",
-              "RelativeToolTip": "Lab3\\Data.txt",
-              "ViewState": "AgIAAMQAAAAAAAAAAAAswO8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-10-16T13:11:56.235Z",
+              "Title": "Song.cs",
+              "DocumentMoniker": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Song.cs",
+              "RelativeDocumentMoniker": "Lab3\\Song.cs",
+              "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Song.cs",
+              "RelativeToolTip": "Lab3\\Song.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T02:37:45.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Media.cs",
-              "DocumentMoniker": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Media.cs",
-              "RelativeDocumentMoniker": "Lab3\\Media.cs",
-              "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Media.cs",
-              "RelativeToolTip": "Lab3\\Media.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Movie.cs",
+              "RelativeDocumentMoniker": "Lab3\\Movie.cs",
+              "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Movie.cs",
+              "RelativeToolTip": "Lab3\\Movie.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowC0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T13:11:23.224Z",
+              "WhenOpened": "2026-10-17T02:14:01.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ISearchable.cs",
-              "DocumentMoniker": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\ISearchable.cs",
-              "RelativeDocumentMoniker": "Lab3\\ISearchable.cs",
-              "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\ISearchable.cs",
-              "RelativeToolTip": "Lab3\\ISearchable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Title": "Rot13.cs",
+              "DocumentMoniker": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Rot13.cs",
+              "RelativeDocumentMoniker": "Lab3\\Rot13.cs",
+              "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Rot13.cs",
+              "RelativeToolTip": "Lab3\\Rot13.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T13:11:03.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEncryptable.cs",
-              "DocumentMoniker": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\IEncryptable.cs",
-              "RelativeDocumentMoniker": "Lab3\\IEncryptable.cs",
-              "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\IEncryptable.cs",
-              "RelativeToolTip": "Lab3\\IEncryptable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T13:10:40.142Z",
+              "WhenOpened": "2026-10-16T20:00:26.895Z",
               "EditorCaption": ""
             },
             {
@@ -92,9 +92,9 @@
               "RelativeDocumentMoniker": "Lab3\\Lab3.cs",
               "ToolTip": "C:\\Users\\Churchill\\Desktop\\Lab3\\Lab3\\Lab3.cs",
               "RelativeToolTip": "Lab3\\Lab3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T13:09:33.718Z",
+              "WhenOpened": "2026-10-16T19:57:03.977Z",
               "EditorCaption": ""
             }
           ]

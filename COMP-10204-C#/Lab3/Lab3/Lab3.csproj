@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3587F893-75CE-45AD-B573-8E41579A92F0}</ProjectGuid>
+    <ProjectGuid>{4A9E3681-792D-4565-9D7A-B852F28AB22A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Lab3</RootNamespace>
     <AssemblyName>Lab3</AssemblyName>
@@ -43,11 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
     <Compile Include="IEncryptable.cs" />
     <Compile Include="ISearchable.cs" />
-    <Compile Include="Media.cs" />
     <Compile Include="Lab3.cs" />
+    <Compile Include="Media.cs" />
+    <Compile Include="Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rot13.cs" />
+    <Compile Include="Song.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

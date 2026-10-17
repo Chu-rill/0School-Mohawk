@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Churchill\\Desktop\\Lab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3587F893-75CE-45AD-B573-8E41579A92F0}|Lab3\\Lab3.csproj|solutionrelative:lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|c:\\users\\churchill\\desktop\\lab3\\lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A9E3681-792D-4565-9D7A-B852F28AB22A}|Lab3\\Lab3.csproj|solutionrelative:lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
               "RelativeToolTip": "Lab3\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T13:09:33.718Z",
+              "WhenOpened": "2026-10-16T19:57:03.977Z",
               "EditorCaption": ""
             }
           ]
