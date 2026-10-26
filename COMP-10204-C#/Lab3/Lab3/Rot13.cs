@@ -15,7 +15,7 @@ namespace Lab3
         {
             if (text.Length >= 0)
             {
-                return "text must be greater than 0";
+                return "text length must be greater than 0";
             }
                 
 
