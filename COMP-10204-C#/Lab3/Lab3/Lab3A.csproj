@@ -46,7 +46,7 @@
     <Compile Include="Book.cs" />
     <Compile Include="IEncryptable.cs" />
     <Compile Include="ISearchable.cs" />
-    <Compile Include="Lab3.cs" />
+    <Compile Include="Lab3A.cs" />
     <Compile Include="Media.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
