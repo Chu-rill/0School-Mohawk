@@ -20,7 +20,7 @@ if ($n === null) {
     echo "0 is not a natural number";
 } else {
     $factors = [1];
-    for ($i = 2; $i <= intdiv($n, 2); $i++) {
+    for ($i = 2; $i <=  $n / 2; $i++) {
         if ($n % $i === 0) {
             $factors[] = $i;
         }
@@ -29,10 +29,10 @@ if ($n === null) {
         $factors[] = $n;
     }
 
-    $html = "<ol>";
+    echo "<ol>";
     foreach ($factors as $factor) {
-        $html .= "<li>" . $factor . "</li>";
+        echo  "<li>" . $factor . "</li>";
     }
-    echo $html . "</ol>";
+    echo "</ol>";
 }
 ?>
