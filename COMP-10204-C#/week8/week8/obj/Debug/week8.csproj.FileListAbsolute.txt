@@ -1,0 +1,10 @@
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\bin\Debug\week8.exe.config
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\bin\Debug\week8.exe
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\bin\Debug\week8.pdb
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\obj\Debug\week8.csproj.AssemblyReference.cache
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\obj\Debug\week8.Form1.resources
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\obj\Debug\week8.Properties.Resources.resources
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\obj\Debug\week8.csproj.GenerateResource.cache
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\obj\Debug\week8.csproj.CoreCompileInputs.cache
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\obj\Debug\week8.exe
+C:\Users\Churchill\Dev\0School-Mohawk\COMP-10204-C#\week8\week8\obj\Debug\week8.pdb
