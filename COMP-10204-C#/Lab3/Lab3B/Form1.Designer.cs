@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.hairdresser = new System.Windows.Forms.ComboBox();
+            this.serviceListBox = new System.Windows.Forms.ListBox();
             this.hairdresserGroupBox = new System.Windows.Forms.GroupBox();
             this.serviceGroupBox = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -40,76 +40,82 @@
             this.resetButton = new System.Windows.Forms.Button();
             this.totalPriceButton = new System.Windows.Forms.Button();
             this.addServiceButton = new System.Windows.Forms.Button();
+            this.chargedListBox = new System.Windows.Forms.ListBox();
+            this.priceListBox = new System.Windows.Forms.ListBox();
             this.hairdresserGroupBox.SuspendLayout();
             this.serviceGroupBox.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.priceGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // hairdresser
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.hairdresser.FormattingEnabled = true;
+            this.hairdresser.Items.AddRange(new object[] {
             "Jane Samley",
             "Pat Johnson",
             "Ron Chambers",
             "Sue Pallon",
             "Laura Renkins"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 34);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 28);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "Jane Samley";
+            this.hairdresser.Location = new System.Drawing.Point(6, 34);
+            this.hairdresser.Name = "hairdresser";
+            this.hairdresser.Size = new System.Drawing.Size(233, 28);
+            this.hairdresser.TabIndex = 0;
+            this.hairdresser.Text = "Jane Samley";
             // 
-            // listBox1
+            // serviceListBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Items.AddRange(new object[] {
+            this.serviceListBox.FormattingEnabled = true;
+            this.serviceListBox.ItemHeight = 20;
+            this.serviceListBox.Items.AddRange(new object[] {
             "Cut",
-            "Wash,blow-dry and style",
+            "Wash, blow-dry, and style",
             "Colour",
             "Highlights",
             "Extensions",
             "Up-do"});
-            this.listBox1.Location = new System.Drawing.Point(15, 34);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(209, 144);
-            this.listBox1.TabIndex = 3;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.serviceListBox.Location = new System.Drawing.Point(15, 34);
+            this.serviceListBox.Name = "serviceListBox";
+            this.serviceListBox.Size = new System.Drawing.Size(218, 164);
+            this.serviceListBox.TabIndex = 3;
+            this.serviceListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // hairdresserGroupBox
             // 
-            this.hairdresserGroupBox.Controls.Add(this.comboBox1);
+            this.hairdresserGroupBox.Controls.Add(this.hairdresser);
             this.hairdresserGroupBox.Location = new System.Drawing.Point(12, 24);
             this.hairdresserGroupBox.Name = "hairdresserGroupBox";
-            this.hairdresserGroupBox.Size = new System.Drawing.Size(245, 213);
+            this.hairdresserGroupBox.Size = new System.Drawing.Size(245, 203);
             this.hairdresserGroupBox.TabIndex = 4;
             this.hairdresserGroupBox.TabStop = false;
             this.hairdresserGroupBox.Text = "Select a Hairdresser:";
             // 
             // serviceGroupBox
             // 
-            this.serviceGroupBox.Controls.Add(this.listBox1);
+            this.serviceGroupBox.Controls.Add(this.serviceListBox);
             this.serviceGroupBox.Location = new System.Drawing.Point(300, 24);
             this.serviceGroupBox.Name = "serviceGroupBox";
-            this.serviceGroupBox.Size = new System.Drawing.Size(239, 213);
+            this.serviceGroupBox.Size = new System.Drawing.Size(239, 203);
             this.serviceGroupBox.TabIndex = 5;
             this.serviceGroupBox.TabStop = false;
             this.serviceGroupBox.Text = "Select a Service:";
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(583, 24);
+            this.groupBox1.Controls.Add(this.chargedListBox);
+            this.groupBox1.Location = new System.Drawing.Point(545, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(204, 213);
+            this.groupBox1.Size = new System.Drawing.Size(243, 203);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
             // priceGroupBox
             // 
-            this.priceGroupBox.Location = new System.Drawing.Point(847, 24);
+            this.priceGroupBox.Controls.Add(this.priceListBox);
+            this.priceGroupBox.Location = new System.Drawing.Point(808, 24);
             this.priceGroupBox.Name = "priceGroupBox";
-            this.priceGroupBox.Size = new System.Drawing.Size(190, 213);
+            this.priceGroupBox.Size = new System.Drawing.Size(229, 203);
             this.priceGroupBox.TabIndex = 7;
             this.priceGroupBox.TabStop = false;
             this.priceGroupBox.Text = "Price:";
@@ -140,6 +146,7 @@
             this.exitButton.TabIndex = 10;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // resetButton
             // 
@@ -149,6 +156,7 @@
             this.resetButton.TabIndex = 11;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // totalPriceButton
             // 
@@ -158,6 +166,7 @@
             this.totalPriceButton.TabIndex = 12;
             this.totalPriceButton.Text = "Calculate Total Price";
             this.totalPriceButton.UseVisualStyleBackColor = true;
+            this.totalPriceButton.Click += new System.EventHandler(this.totalPriceButton_Click);
             // 
             // addServiceButton
             // 
@@ -167,6 +176,25 @@
             this.addServiceButton.TabIndex = 13;
             this.addServiceButton.Text = "Add Service";
             this.addServiceButton.UseVisualStyleBackColor = true;
+            this.addServiceButton.Click += new System.EventHandler(this.addServiceButton_Click);
+            // 
+            // chargedListBox
+            // 
+            this.chargedListBox.FormattingEnabled = true;
+            this.chargedListBox.ItemHeight = 20;
+            this.chargedListBox.Location = new System.Drawing.Point(6, 25);
+            this.chargedListBox.Name = "chargedListBox";
+            this.chargedListBox.Size = new System.Drawing.Size(231, 164);
+            this.chargedListBox.TabIndex = 0;
+            // 
+            // priceListBox
+            // 
+            this.priceListBox.FormattingEnabled = true;
+            this.priceListBox.ItemHeight = 20;
+            this.priceListBox.Location = new System.Drawing.Point(6, 25);
+            this.priceListBox.Name = "priceListBox";
+            this.priceListBox.Size = new System.Drawing.Size(218, 164);
+            this.priceListBox.TabIndex = 0;
             // 
             // Form1
             // 
@@ -189,6 +217,8 @@
             this.Text = "Form1";
             this.hairdresserGroupBox.ResumeLayout(false);
             this.serviceGroupBox.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.priceGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,8 +226,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox hairdresser;
+        private System.Windows.Forms.ListBox serviceListBox;
         private System.Windows.Forms.GroupBox hairdresserGroupBox;
         private System.Windows.Forms.GroupBox serviceGroupBox;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -208,6 +238,8 @@
         private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.Button totalPriceButton;
         private System.Windows.Forms.Button addServiceButton;
+        private System.Windows.Forms.ListBox chargedListBox;
+        private System.Windows.Forms.ListBox priceListBox;
     }
 }
 
