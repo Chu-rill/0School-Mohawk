@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
+    /// <summary>
+    /// I, Churchill Daniel, 000983683 certify that this material is my original work.
+    /// No other person's work has been used without due acknowledgement.
+    /// </summary>
     internal class Rot13
     {
         ///<summary>

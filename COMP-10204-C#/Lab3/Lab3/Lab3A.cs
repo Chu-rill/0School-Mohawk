@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
+    /// <summary>
+    /// I, Churchill Daniel, 000983683 certify that this material is my original work.
+    /// No other person's work has been used without due acknowledgement.
+    /// </summary>
     internal class Lab3A
     {
         static void Main(string[] args)
@@ -35,7 +39,7 @@ namespace Lab3
                         ListAllMedia(media);
                         break;
                     case "5":
-                        Console.WriteLine("5");
+                        SearchByTitle(media);
                         break;
                     case "6":
                         running = false;
@@ -205,5 +209,42 @@ namespace Lab3
             foreach (Media item in media)
                 Console.WriteLine(item);   // ToString() in each class, no summary
         }
+
+        /// <summary>
+        /// Shows every item with the key in its title with a decrypted
+        /// summary for Books and Movies
+        /// </summary>
+        static void SearchByTitle(List<Media> media)
+        {
+            Console.Write("Enter a title to search for: ");
+            string key = Console.ReadLine().Trim();
+
+            while (key == "")
+            {
+                Console.Write("Search cannot be blank. Try again: ");
+                key = Console.ReadLine().Trim();
+            }
+
+            Console.WriteLine();
+            bool found = false;
+
+            foreach (Media item in media)
+            {
+                if (item.Search(key))
+                {
+                    found = true;
+                    Console.WriteLine(item);
+
+                    if (item is IEncryptable)
+                        Console.WriteLine("Summary: " + ((IEncryptable)item).Decrypt());
+
+                    Console.WriteLine();
+                }
+            }
+
+            if (!found)
+                Console.WriteLine("No media found with " + key + " in the title.");
+        }
+
     }
 }
